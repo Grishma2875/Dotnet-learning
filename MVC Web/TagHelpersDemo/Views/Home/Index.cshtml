@@ -1,0 +1,56 @@
+﻿@model TagHelpersDemo.Models.Employee;
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+<div class="container">
+    <div class="row">
+    <div class="col-sm-4">
+        <form asp-action="Index" asp-controller="Home" method="post">
+            <input asp-for="Name" placeholder="Enter Name"/>
+            <br />
+            <select asp-for="Gender" class="form-control" asp-items="Html.GetEnumSelectList<Gender>()">
+                <option value="">Select Gender</option>
+            </select>
+            <br />
+            <input asp-for="Age" placeholder="Enter Age"/>
+                <br />
+                <input asp-for="Designation" placeholder="Enter Designation" />
+                <br />
+                <input asp-for="Salary" placeholder="Enter salary" />
+                <br />
+                <input type="submit" value="Submit" class="btn btn-ot
+"/>
+        </form>
+    </div>
+    </div>
+</div>
+
+
+@* <a href="/Home/Contect">Contect Page 1</a>
+<br /> 
+
+ <a asp-controller="Home" asp-action="Contect">Conetct Page 4</a> *@
+
+@* <a href="/Home/Contect">Contect Page 1</a>
+<br />
+@Html.ActionLink("Contect Page 2","Conetct","Home")
+<br />
+
+<a href="@Url.Action("Contact","Home")">Conetct Page 3</a>
+<br />
+<a asp-controller="Home" asp-action="Contect">Conetct Page 4</a> *@
+
+@* <a href="/Home/Contect/1">Contect Page 1</a>
+<br />
+@Html.ActionLink("Contect Page 2", "Conetct", "Home", new { id = 1 })
+<br />
+
+<a href="@Url.Action("Contact", "Home", new { id = 1 })">Conetct Page 3</a>
+<br />
+<a asp-controller="Home" asp-action="Contect" asp-route-id="1">Conetct Page 4</a> *@
