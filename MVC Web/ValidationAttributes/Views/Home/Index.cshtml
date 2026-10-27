@@ -2,7 +2,7 @@
 @{
     ViewData["Title"] = "Home Page";
 }
-
+ 
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
     <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
@@ -12,12 +12,22 @@
     <div class="row">
         <div class="col-sm-4">
             <form asp-controller="Home" asp-action="Index" method="post">
-                <input asp-for="Name" class="form" placeholder="Enter Your Name"/>
-                <span asp-validation-for="Name"></span>
+                <label asp-for="Name"></label>
+                @* <input asp-for="Name" class="form-control" placeholder="Enter Your Name"/>
+                <span asp-validation-for="Name" style="color : red;"></span>
                 <br/>
-                <input asp-for="Name" class="form" placeholder="Enter Your Name" />
-                <span asp-validation-for="Name"></span>
+                <input asp-for="Email" class="form-control" placeholder="Enter Your Email" />
+                <span asp-validation-for="Email" style="color:red;"></span>
                 <br />
+                <input asp-for="PNumber" class="form-control" placeholder="Enter Your number" />
+                <span asp-validation-for="PNumber" style="color:red;"></span>
+                <br />
+                <input asp-for="Age" class="form-control" placeholder="Enter Your Age" />
+                <span asp-validation-for="Age" style="color:red;"></span>
+                <br />
+                <input asp-for="Password" class="form-control" placeholder="Enter Your Password" />
+                <span asp-validation-for="Password" style="color:red;"></span>
+                <br /> *@
                 <input type="submit" value="Submit" class="btn btn-outline-primary"/>
             </form>
         </div>

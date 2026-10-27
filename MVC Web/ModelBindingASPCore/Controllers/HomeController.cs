@@ -10,7 +10,7 @@ namespace ModelBindingASPCore.Controllers
         {
             return View();
         }
-        public IActionResult Details(int id, string name)
+        public string Details(int id, string name)
         {
             return "Id is: " + id + " Name is: " + name;
         }

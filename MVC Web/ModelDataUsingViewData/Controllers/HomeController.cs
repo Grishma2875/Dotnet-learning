@@ -21,11 +21,11 @@ namespace ModelDataUsingViewData.Controllers
 
             var myEmployees = new List<Employee>
             {
-                new Employee { EmpId = 101, EmpName = "Prem", Designation = "Manager", Salary = 25000},
+                new Employee { EmpId = 101, EmpName = "Prem", Designation = "Manager", Salary = 27000},
                 new Employee { EmpId = 102, EmpName = "Grishma", Designation = "Manager", Salary = 25000},
-                new Employee { EmpId = 103, EmpName = "Jeeya", Designation = "Manager", Salary = 25000},
-                new Employee { EmpId = 104, EmpName = "Yash", Designation = "Manager", Salary = 25000},
-                new Employee { EmpId = 105, EmpName = "Rohan", Designation = "Manager", Salary = 25000},
+                new Employee { EmpId = 103, EmpName = "Jeeya", Designation = "Manager", Salary = 30000},
+                new Employee { EmpId = 104, EmpName = "Yash", Designation = "Manager", Salary = 36000},
+                new Employee { EmpId = 105, EmpName = "Rohan", Designation = "Manager", Salary = 40000},
             };
 
             ViewData["myEmployee"] = myEmployees;

@@ -11,21 +11,38 @@
 <div class="container">
     <div class="row">
     <div class="col-sm-4">
-        <form asp-action="Index" asp-controller="Home" method="post">
+        <form asp-action="Index" asp-controller="Home" method="post" class="d-grid">
+            <label asp-for>Enter your Name: </label>
             <input asp-for="Name" placeholder="Enter Name"/>
-            <br />
+            <br />  
+            <br/>
             <select asp-for="Gender" class="form-control" asp-items="Html.GetEnumSelectList<Gender>()">
                 <option value="">Select Gender</option>
             </select>
             <br />
             <input asp-for="Age" placeholder="Enter Age"/>
                 <br />
+                <br />
                 <input asp-for="Designation" placeholder="Enter Designation" />
                 <br />
+                <br/>
                 <input asp-for="Salary" placeholder="Enter salary" />
                 <br />
-                <input type="submit" value="Submit" class="btn btn-ot
-"/>
+                <br/>
+                <label> 
+                    Married
+                </label>
+                <div class="from-check">
+                    <input asp-for="IsMarried" class="form-check-input" type="radio" id="flexRadioDefault1"/>
+                    <label class="from-check-label" for="flexRadioDefault1">Yes</label>   
+                 </div>
+                <div class="from-check">
+                    <input asp-for="IsMarried" class="form-check-input" type="radio" id="flexRadioDefault2"/>
+                    <label class="from-check-label" for="flexRadioDefault2">no</label>   
+                 </div>
+                <input type="submit" value="Submit" class="btn btn-ot"/>
+                 <textarea asp-for="Description" placeholder="Enter Description" class="form-control">
+                </textarea>
         </form>
     </div>
     </div>
@@ -40,7 +57,7 @@
 @* <a href="/Home/Contect">Contect Page 1</a>
 <br />
 @Html.ActionLink("Contect Page 2","Conetct","Home")
-<br />
+<<br /> />
 
 <a href="@Url.Action("Contact","Home")">Conetct Page 3</a>
 <br />

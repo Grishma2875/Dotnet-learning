@@ -15,7 +15,7 @@ namespace TagHelpersDemo.Controllers
         [HttpPost]
         public IActionResult Index(Employee e)
         {
-            return "Name: " + e.Name + " Gender: " + e.Gender + " Age: " + e.Age + " Designation: " + e.Designation + " Salary: " + e.Salary; 
+            return View(); 
         }
         public IActionResult Contect()
         {

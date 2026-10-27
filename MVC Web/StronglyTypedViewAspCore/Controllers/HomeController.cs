@@ -18,10 +18,10 @@ namespace StronglyTypedViewAspCore.Controllers
 
             var myEmployees = new List<Employee>
             {
-                new Employee { EmpId = 101, EmpName = "Grishma", Designation = "Mnager", Salary = 20000 }
-                new Employee { EmpId = 102, EmpName = "Hetvi", Designation = "Mnager", Salary = 20000 }
-                new Employee { EmpId = 103, EmpName = "Krish", Designation = "Mnager", Salary = 20000 }
-                new Employee { EmpId = 104, EmpName = "Ansh", Designation = "Mnager", Salary = 20000 }
+                new Employee { EmpId = 101, EmpName = "Grishma", Designation = "Mnager", Salary = 20000 },
+                new Employee { EmpId = 102, EmpName = "Hetvi", Designation = "Mnager", Salary = 20000 },
+                new Employee { EmpId = 103, EmpName = "Krish", Designation = "Mnager", Salary = 20000 },
+                new Employee { EmpId = 104, EmpName = "Ansh", Designation = "Mnager", Salary = 20000 },
                 new Employee { EmpId = 105, EmpName = "Princy", Designation = "Mnager", Salary = 20000 }
 
             };

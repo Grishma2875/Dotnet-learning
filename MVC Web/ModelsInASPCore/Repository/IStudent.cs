@@ -6,5 +6,5 @@ namespace ModelsInASPCore.Repository
     {
         List<StudentModel> getAllStudents();
         StudentModel getStudentById(int id);
-    }
+    }   
 }
